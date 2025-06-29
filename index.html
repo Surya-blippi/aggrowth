@@ -205,7 +205,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            padding-top: 6rem;
+            padding-top: 4rem;
         }
 
         .hero-content {
@@ -536,6 +536,375 @@
             font-size: 0.95rem;
         }
 
+        /* Case Studies Section */
+        .case-studies {
+            padding: 8rem 0;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .case-studies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .case-study-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+        }
+
+        .case-study-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .case-study-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .case-study-header h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--white);
+        }
+
+        .industry-tag {
+            background: rgba(255, 215, 0, 0.1);
+            color: var(--yellow);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .challenge, .solution {
+            margin-bottom: 1.5rem;
+        }
+
+        .challenge h4, .solution h4 {
+            font-size: 1rem;
+            color: var(--yellow);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .challenge p, .solution ul {
+            color: var(--gray-light);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .solution ul {
+            padding-left: 1rem;
+            list-style: none;
+        }
+
+        .solution li {
+            position: relative;
+            margin-bottom: 0.3rem;
+        }
+
+        .solution li::before {
+            content: '✓';
+            position: absolute;
+            left: -1rem;
+            color: var(--yellow);
+            font-weight: bold;
+        }
+
+        .results-summary {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .result-metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--yellow);
+            margin-bottom: 0.3rem;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--gray-light);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 8rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: start;
+        }
+
+        .about-description {
+            font-size: 1.1rem;
+            color: var(--gray-light);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-item {
+            text-align: center;
+        }
+
+        .highlight-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--yellow);
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-label {
+            font-size: 0.9rem;
+            color: var(--gray-light);
+        }
+
+        .expertise-areas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .expertise-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-item:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            background: rgba(255, 215, 0, 0.02);
+        }
+
+        .expertise-item i {
+            font-size: 2rem;
+            color: var(--yellow);
+            margin-bottom: 1rem;
+        }
+
+        .expertise-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .expertise-item p {
+            font-size: 0.9rem;
+            color: var(--gray-light);
+            line-height: 1.5;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 8rem 0;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .testimonial-content {
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-content p {
+            font-size: 1.1rem;
+            color: var(--gray-light);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .author-info h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 0.3rem;
+        }
+
+        .author-info span {
+            font-size: 0.9rem;
+            color: var(--gray-medium);
+        }
+
+        .testimonial-rating {
+            color: var(--yellow);
+            font-size: 1.2rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 8rem 0;
+        }
+
+        .faq-content {
+            max-width: 800px;
+            margin: 4rem auto 0;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 215, 0, 0.02);
+        }
+
+        .faq-question h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .faq-question i {
+            color: var(--yellow);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--gray-light);
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin-top: 6rem;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+        }
+
+        .cta-section h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: var(--gray-light);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tools Section */
+        .tools {
+            padding: 8rem 0;
+            background: rgba(255, 255, 255, 0.01);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .tool-category {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .tool-category:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            background: rgba(255, 215, 0, 0.02);
+        }
+
+        .tool-category h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--yellow);
+            margin-bottom: 1rem;
+        }
+
+        .tool-category p {
+            color: var(--gray-light);
+            line-height: 1.6;
+        }
+
         /* Contact Section */
         .contact {
             padding: 8rem 0;
@@ -568,21 +937,26 @@
             margin: 3rem 0;
         }
 
-        .contact-item {
+        .contact-icon {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            color: var(--gray-light);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .contact-item:hover {
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 50%;
             color: var(--yellow);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
 
-        .contact-item i {
-            font-size: 1.2rem;
+        .contact-icon:hover {
+            background: var(--yellow);
+            color: var(--black);
+            border-color: var(--yellow);
+            transform: translateY(-2px);
         }
 
         /* Footer */
@@ -640,7 +1014,7 @@
             }
 
             .hero {
-                padding-top: 5rem;
+                padding-top: 4rem;
                 min-height: 90vh;
             }
 
@@ -700,13 +1074,99 @@
                 padding: 4rem 0;
             }
 
+            .case-studies {
+                padding: 4rem 0;
+            }
+
+            .case-studies-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .case-study-card {
+                padding: 2rem;
+            }
+
+            .case-study-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .results-summary {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .about-section {
+                padding: 4rem 0;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .expertise-areas {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .testimonials {
+                padding: 4rem 0;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .testimonial-card {
+                padding: 2rem;
+            }
+
+            .testimonial-author {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .faq {
+                padding: 4rem 0;
+            }
+
+            .cta-section {
+                padding: 2rem;
+                margin-top: 4rem;
+            }
+
+            .tools {
+                padding: 4rem 0;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
             .contact {
                 padding: 4rem 0;
             }
 
             .contact-info {
-                flex-direction: column;
+                flex-direction: row;
                 gap: 1.5rem;
+            }
+
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
             }
 
             .results-grid {
@@ -733,7 +1193,7 @@
             }
 
             .hero {
-                padding-top: 5rem;
+                padding-top: 4rem;
                 padding-bottom: 2rem;
             }
 
@@ -757,6 +1217,15 @@
             .btn-primary, .btn-secondary {
                 font-size: 0.95rem;
                 padding: 1rem 1.5rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .tool-category {
+                padding: 1.5rem;
             }
 
             .results-grid {
@@ -857,6 +1326,38 @@
             }
         }
 
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--yellow);
+            color: var(--black);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--yellow-bright);
+            transform: translateY(-2px);
+        }
+
         /* Smooth transitions */
         * {
             scroll-behavior: smooth;
@@ -917,6 +1418,11 @@
                 min-height: 48px;
             }
 
+            .contact-icon {
+                min-height: 60px;
+                min-width: 60px;
+            }
+
             .mobile-menu-toggle {
                 min-height: 44px;
                 min-width: 44px;
@@ -951,7 +1457,8 @@
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="#services">Services</a></li>
                     <li class="nav-item"><a href="#approach">Approach</a></li>
-                    <li class="nav-item"><a href="#results">Results</a></li>
+                    <li class="nav-item"><a href="#case-studies">Case Studies</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="#contact" class="nav-cta">Get Started</a>
@@ -968,7 +1475,8 @@
         <ul class="mobile-menu-items">
             <li><a href="#services">Services</a></li>
             <li><a href="#approach">Approach</a></li>
-            <li><a href="#results">Results</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <a href="#contact" class="nav-cta">Get Started</a>
@@ -1002,16 +1510,16 @@
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
-                        <span class="stat-number">300%</span>
-                        <span class="stat-label">Average ROI Increase</span>
+                        <span class="stat-number">22%</span>
+                        <span class="stat-label">CAC Alignment Gain</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">$2.4M</span>
-                        <span class="stat-label">Revenue Generated</span>
+                        <span class="stat-number">$17K+</span>
+                        <span class="stat-label">Monthly Revenue Lift</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">67%</span>
-                        <span class="stat-label">Efficiency Improvement</span>
+                        <span class="stat-number">27%</span>
+                        <span class="stat-label">Ticket Deflection</span>
                     </div>
                 </div>
             </div>
@@ -1033,57 +1541,57 @@
                     <div class="service-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3>Analytics & Attribution</h3>
-                    <p>Complete analytics architecture with GA4, Mixpanel, and Amplitude. Fix attribution gaps and get crystal-clear ROI visibility across all channels.</p>
+                    <h3>Analytics Architecture & Audit</h3>
+                    <p>Complete analytics architecture with GA4, Mixpanel, and Amplitude. Audit and fix attribution gaps to get crystal-clear ROI visibility across all channels.</p>
+                </div>
+                <div class="service-card scroll-animate">
+                    <div class="service-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Attribution Modeling</h3>
+                    <p>Advanced attribution modeling across Meta, Google, Klaviyo, and Shopify. Fix attribution drift and achieve precise CAC alignment for better decision-making.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
-                    <h3>Growth Marketing</h3>
-                    <p>Strategic campaigns across Meta Ads, Google Ads, and Klaviyo. Data-driven acquisition and retention strategies that scale.</p>
+                    <h3>Growth Marketing Strategy</h3>
+                    <p>Strategic campaigns across Meta Ads, Google Ads, and Klaviyo. Data-driven acquisition and retention strategies that scale efficiently.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
                         <i class="fas fa-flask"></i>
                     </div>
                     <h3>Product Strategy & PLG</h3>
-                    <p>Product-led growth experimentation and optimization. Improve trial-to-paid conversion through systematic testing and analysis.</p>
+                    <p>Product-led growth experimentation and optimization. Launch PLG initiatives and improve trial-to-paid conversion through systematic testing.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
                         <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3>CRM & Lifecycle</h3>
-                    <p>Advanced automation in Klaviyo and HubSpot. Maximize customer lifetime value through intelligent lifecycle campaigns.</p>
+                    <h3>CRM & Lifecycle Strategy</h3>
+                    <p>Advanced automation in Klaviyo and HubSpot. Optimize lifecycle marketing and maximize customer lifetime value through intelligent campaigns.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
                         <i class="fas fa-headset"></i>
                     </div>
-                    <h3>Zendesk Optimization</h3>
-                    <p>Support system transformation. Optimize workflows, improve CSAT scores, and reduce ticket volume through smart automation.</p>
+                    <h3>Zendesk Support Optimization</h3>
+                    <p>Complete Zendesk audit and optimization. Deliver scalable support systems, improve CSAT scores, and reduce ticket volume through smart workflows.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Software Development</h3>
-                    <p>Rapid MVP development and internal tools using Retool, Bubble, and modern frameworks. Turn ideas into reality in days.</p>
+                    <p>Rapid MVP development and internal tools using Retool, Bubble, and JavaScript. Build web applications and dashboards with modern tech stacks.</p>
                 </div>
                 <div class="service-card scroll-animate">
                     <div class="service-icon">
-                        <i class="fas fa-bullhorn"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Digital Marketing</h3>
-                    <p>Comprehensive performance marketing, SEO, CRO, and email marketing strategies for maximum reach and conversion.</p>
-                </div>
-                <div class="service-card scroll-animate">
-                    <div class="service-icon">
-                        <i class="fas fa-dashboard"></i>
-                    </div>
-                    <h3>Business Intelligence</h3>
-                    <p>Custom dashboards in Looker Studio, Retool, and Google Sheets. Transform data into actionable business insights.</p>
+                    <h3>Dashboarding & BI</h3>
+                    <p>Custom dashboards in Looker Studio, Retool, and Google Sheets. Transform data into actionable business insights with 3x faster reporting.</p>
                 </div>
             </div>
         </div>
@@ -1096,8 +1604,9 @@
                 <div class="approach-text scroll-animate">
                     <h2>Our <span class="highlight">Proven</span> Approach</h2>
                     <p class="approach-description">
+                        <strong>Audit → Model → Act → Scale</strong><br><br>
                         We combine structured thinking with agile execution to deliver measurable outcomes. 
-                        Our four-step methodology ensures clarity, strategy, and scalable results for every client.
+                        Whether you're navigating CAC issues, retention gaps, or feature bloat — we bring clarity, strategy, and structure.
                     </p>
                 </div>
                 <div class="approach-steps scroll-animate">
@@ -1134,40 +1643,376 @@
         </div>
     </section>
 
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">Client Success</span>
+                <h2 class="section-title">Real Results, Real Impact</h2>
+                <p class="section-subtitle">
+                    See how we've helped SaaS startups, DTC brands, and service businesses achieve breakthrough growth through data-driven strategies.
+                </p>
+            </div>
+            <div class="case-studies-grid">
+                <div class="case-study-card scroll-animate">
+                    <div class="case-study-header">
+                        <h3>SaaS Platform</h3>
+                        <span class="industry-tag">B2B SaaS</span>
+                    </div>
+                    <div class="challenge">
+                        <h4>The Challenge</h4>
+                        <p>Unclear channel ROI across paid ads and product-to-paid conversion drop of 40% over 6 months.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Our Approach</h4>
+                        <ul>
+                            <li>Complete GA4 & Mixpanel tracking audit</li>
+                            <li>Implemented UTM tracking + Looker dashboards</li>
+                            <li>Redesigned onboarding flow</li>
+                            <li>Launched targeted lifecycle campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="results-summary">
+                        <div class="result-metric">
+                            <span class="metric-value">21%</span>
+                            <span class="metric-label">Attribution Accuracy ↑</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">14%</span>
+                            <span class="metric-label">Trial-to-Paid ↑</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">3x</span>
+                            <span class="metric-label">Faster Insights</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="case-study-card scroll-animate">
+                    <div class="case-study-header">
+                        <h3>E-commerce Brand</h3>
+                        <span class="industry-tag">DTC</span>
+                    </div>
+                    <div class="challenge">
+                        <h4>The Challenge</h4>
+                        <p>Meta/Google attribution drift causing CAC miscalculation and poor retention strategy.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Our Approach</h4>
+                        <ul>
+                            <li>Fixed Meta & Google attribution setup</li>
+                            <li>Implemented Klaviyo post-purchase flows</li>
+                            <li>Created cohort analysis dashboards</li>
+                            <li>Optimized ad spend allocation</li>
+                        </ul>
+                    </div>
+                    <div class="results-summary">
+                        <div class="result-metric">
+                            <span class="metric-value">22%</span>
+                            <span class="metric-label">CAC Alignment ↑</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">$17K+</span>
+                            <span class="metric-label">Monthly Revenue ↑</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">18%</span>
+                            <span class="metric-label">Retention Revenue ↑</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-study-card scroll-animate">
+                    <div class="case-study-header">
+                        <h3>Service Business</h3>
+                        <span class="industry-tag">B2B Services</span>
+                    </div>
+                    <div class="challenge">
+                        <h4>The Challenge</h4>
+                        <p>Zendesk ticket overflow, poor CSAT scores, and need for rapid MVP development.</p>
+                    </div>
+                    <div class="solution">
+                        <h4>Our Approach</h4>
+                        <ul>
+                            <li>Redesigned Zendesk macros and workflows</li>
+                            <li>Implemented smart ticket routing</li>
+                            <li>Built custom onboarding app in Retool</li>
+                            <li>Created automated follow-up sequences</li>
+                        </ul>
+                    </div>
+                    <div class="results-summary">
+                        <div class="result-metric">
+                            <span class="metric-value">27%</span>
+                            <span class="metric-label">Ticket Deflection ↑</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">10 Days</span>
+                            <span class="metric-label">MVP Delivery</span>
+                        </div>
+                        <div class="result-metric">
+                            <span class="metric-value">45%</span>
+                            <span class="metric-label">CSAT Improvement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text scroll-animate">
+                    <span class="section-badge">Meet the Team</span>
+                    <h2 class="section-title">Built by Growth Experts</h2>
+                    <p class="about-description">
+                        AG Growth Lab was founded with a simple mission: help businesses grow through structured, data-driven systems rather than guesswork and gut feelings.
+                    </p>
+                    <p class="about-description">
+                        Our team combines deep technical expertise with strategic thinking to deliver measurable results. We've worked with startups scaling from zero to millions, established brands optimizing their growth engines, and everything in between.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-number">50+</span>
+                            <span class="highlight-label">Projects Completed</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">$5M+</span>
+                            <span class="highlight-label">Revenue Generated</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-number">3x</span>
+                            <span class="highlight-label">Average Growth Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual scroll-animate">
+                    <div class="expertise-areas">
+                        <div class="expertise-item">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>Analytics Mastery</h4>
+                            <p>Deep expertise in GA4, Mixpanel, Amplitude, and custom tracking solutions.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Growth Engineering</h4>
+                            <p>Product-led growth strategies and systematic experimentation frameworks.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <i class="fas fa-cogs"></i>
+                            <h4>System Building</h4>
+                            <p>Creating scalable processes that work without constant manual intervention.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <i class="fas fa-code"></i>
+                            <h4>Technical Implementation</h4>
+                            <p>Rapid prototyping and development using modern no-code and code solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">Client Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">
+                    Don't just take our word for it. Here's what business leaders say about working with AG Growth Lab.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <p>"AG Growth Lab transformed our analytics setup completely. We went from flying blind to having crystal-clear visibility into our growth metrics. The attribution fixes alone saved us thousands in wasted ad spend."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <span>CEO, TechFlow SaaS</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <p>"The team's approach to product-led growth was exactly what we needed. They didn't just give us recommendations—they built the systems and helped us implement everything. Our trial-to-paid conversion improved by 14%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Marcus Rodriguez</h4>
+                            <span>Head of Growth, DataVault</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-animate">
+                    <div class="testimonial-content">
+                        <p>"Working with AG Growth Lab was like having a senior growth team without the overhead. They delivered an MVP in 10 days that would have taken our internal team months to build."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jennifer Walsh</h4>
+                            <span>VP Operations, GrowthCo</span>
+                        </div>
+                        <div class="testimonial-rating">
+                            <span>★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Everything you need to know about working with AG Growth Lab.
+                </p>
+            </div>
+            <div class="faq-content">
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h4>How quickly can you deliver results?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most clients see initial improvements within 2-4 weeks. For analytics audits and attribution fixes, results are often visible immediately. Larger projects like MVP development typically take 10-30 days depending on complexity.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h4>What types of businesses do you work with?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We primarily work with SaaS startups, DTC brands, and service businesses that are already generating revenue and looking to scale. Our ideal clients have product-market fit and want to optimize their growth engines through data-driven approaches.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h4>Do you work with early-stage startups?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, especially for MVP development and initial analytics setup. We help early-stage companies build the right foundation for growth tracking and experimentation from day one.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h4>What's included in an analytics audit?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our analytics audit includes a complete review of your current tracking setup, identification of data gaps, attribution analysis, conversion funnel analysis, and a detailed report with prioritized recommendations for improvement.</p>
+                    </div>
+                </div>
+                <div class="faq-item scroll-animate">
+                    <div class="faq-question">
+                        <h4>Can you help with ongoing optimization?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. We offer both project-based work and ongoing optimization partnerships. Many clients start with a specific project and then work with us monthly for continued growth optimization and strategic guidance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-section scroll-animate">
+                <h3>Want a Custom Growth Assessment?</h3>
+                <p>Get a personalized analysis of your growth stack and recommendations for improvement.</p>
+                <a href="mailto:gnanesh@aggrowthlabs.com?subject=Custom Growth Assessment Request" class="btn-primary">
+                    <span>Get Free Assessment</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Results Section -->
     <section id="results" class="results">
         <div class="container">
             <div class="section-header scroll-animate">
-                <span class="section-badge">Proven Results</span>
-                <h2 class="section-title">What We've Achieved</h2>
+                <span class="section-badge">Key Metrics</span>
+                <h2 class="section-title">Growth by the Numbers</h2>
                 <p class="section-subtitle">
-                    Real results from real clients. Here's how we've transformed businesses through data-driven growth strategies.
+                    These metrics represent real improvements achieved across our client portfolio through structured, data-driven optimization.
                 </p>
             </div>
             <div class="results-grid">
                 <div class="result-card scroll-animate">
                     <span class="result-number">22%</span>
-                    <p class="result-description">CAC reduction through attribution optimization</p>
+                    <p class="result-description">CAC alignment gain from fixing Meta/Google attribution drift</p>
                 </div>
                 <div class="result-card scroll-animate">
                     <span class="result-number">$17K+</span>
-                    <p class="result-description">Monthly revenue lift via lifecycle automation</p>
+                    <p class="result-description">Monthly retention lift via lifecycle flows</p>
                 </div>
                 <div class="result-card scroll-animate">
                     <span class="result-number">27%</span>
-                    <p class="result-description">Support ticket reduction through Zendesk optimization</p>
+                    <p class="result-description">Zendesk ticket deflection via macros & triggers</p>
                 </div>
                 <div class="result-card scroll-animate">
-                    <span class="result-number">14%</span>
-                    <p class="result-description">Trial-to-paid conversion improvement</p>
+                    <span class="result-number">21%</span>
+                    <p class="result-description">Attribution accuracy improvement</p>
+                </div>
+                <div class="result-card scroll-animate">
+                    <span class="result-number">18%</span>
+                    <p class="result-description">Retention-driven revenue increase</p>
                 </div>
                 <div class="result-card scroll-animate">
                     <span class="result-number">10 Days</span>
-                    <p class="result-description">Average MVP delivery time</p>
+                    <p class="result-description">MVP app shipped using Retool + Notion backend</p>
                 </div>
-                <div class="result-card scroll-animate">
-                    <span class="result-number">3x</span>
-                    <p class="result-description">Faster insights through custom dashboards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <div class="section-header scroll-animate">
+                <span class="section-badge">Our Expertise</span>
+                <h2 class="section-title">Tool Stack Mastery</h2>
+                <p class="section-subtitle">
+                    We work with the best-in-class tools to deliver exceptional results across analytics, marketing, and development.
+                </p>
+            </div>
+            <div class="tools-grid scroll-animate">
+                <div class="tool-category">
+                    <h4>Analytics & Data</h4>
+                    <p>GA4, Mixpanel, Amplitude, PostHog</p>
+                </div>
+                <div class="tool-category">
+                    <h4>Marketing Platforms</h4>
+                    <p>Meta Ads, Google Ads, Klaviyo, Shopify</p>
+                </div>
+                <div class="tool-category">
+                    <h4>CRM & Automation</h4>
+                    <p>HubSpot, Klaviyo, Zendesk</p>
+                </div>
+                <div class="tool-category">
+                    <h4>Development Tools</h4>
+                    <p>Retool, Bubble, JavaScript</p>
+                </div>
+                <div class="tool-category">
+                    <h4>Business Intelligence</h4>
+                    <p>Looker Studio, Google Sheets</p>
+                </div>
+                <div class="tool-category">
+                    <h4>Productivity</h4>
+                    <p>Notion, Airtable</p>
                 </div>
             </div>
         </div>
@@ -1183,18 +2028,12 @@
                     Let's discuss how we can help you build structured growth systems that deliver measurable results.
                 </p>
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <a href="mailto:gnanesh@aggrowthlabs.com" class="contact-icon">
                         <i class="fas fa-envelope"></i>
-                        <span>gnanesh@aggrowthlabs.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <span>aggrowthlabs.com</span>
-                    </div>
-                    <div class="contact-item">
+                    </a>
+                    <a href="https://linkedin.com/company/aggrowthlab" target="_blank" rel="noopener noreferrer" class="contact-icon">
                         <i class="fab fa-linkedin"></i>
-                        <span>@aggrowthlab</span>
-                    </div>
+                    </a>
                 </div>
                 <a href="mailto:gnanesh@aggrowthlabs.com" class="btn-primary">
                     <span>Start Your Growth Journey</span>
@@ -1207,9 +2046,14 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 AG Growth Lab. Structured. Strategic. Scalable.</p>
+            <p>&copy; 2025 AG Growth Lab. Structured. Strategic. Scalable — Building growth engines through data, not guesses.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script>
         // Header scroll effect
@@ -1295,6 +2139,45 @@
                 mobileMenuIcon.className = 'fas fa-bars';
                 document.body.style.overflow = '';
             }
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = question.querySelector('i');
+                
+                // Toggle active state
+                faqItem.classList.toggle('active');
+                
+                // Toggle answer visibility
+                if (faqItem.classList.contains('active')) {
+                    answer.style.display = 'block';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.display = 'none';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Back to top functionality
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
 
         // Add loading animation
